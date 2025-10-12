@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="UTF-8" />
+ <title>Survey Form</title>
+ </head>
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="UTF-8" />
+ <title>Survey Form</title>
+ </head>
+ <body>
+ <h1 id="title">Squirrel Survey</h1>
+ <p id="description">Tell us about your squirrel encounter:</p>
+ <form id="survey-form" method="post" action="/submit">
+ <label for="name" id="name-label">Name of Squirrel:</label>
+ <input id="name" type="text" placeholder="Peanut Metz" required><br /><br />
+ <label for="email" id="email-label">Email of Squirrel:</label>
+ <input id="email" type="email" placeholder="pecansforever@nuts.com" required>
+<br /><br />
+ <label for"number" id="number-label">Age of Squirrel</label>
+ <input id="number" type="number" name="age" min="5" max="555" 
+placeholder="age in number of weeks"><br /><br />
+ <label for="dropdown">Attitude of Squirrel</label>
+ <select id="dropdown" name="attitude">
+ <option>Happy</option>
+ <option>Sad</option>
+ <option>Nutty</option>
+ </select><br /><br />
+ <fieldset>
+ <legend>Did your squirrel accept your nuts?</legend>
+ <label for="yes">Yes</label>
+ <input type="radio" name="answer" value="yes" id="yes">
+ <label for="no">No</label>
+ <input type="radio" name="answer" value="no" id="no">
+ </fieldset><br /><br />
+ <fieldset>
+ <legend>Qualities of Squirrel</legend>
+ <label for="fast">Fast</label>
+ <input type="checkbox" is="fast" value="Fast" name="fast">
+ <label for="fluffy">Fluffy</label>
+ <input type="checkbox" id="fluffy" value="Fluffy" name="Fluffy">
+ <label for="WhiteTum y">White Tummy</label>
+ <input type="checkbox" id="WhiteTummy" value="White Tummy" name="White 
+Tummy">
+ <label for="Brown">Brown</label>
+ <input type="checkbox" id="Brown" value="Brown" name="Brown">
+ <label for="Red">Red</label>
+ <input type="checkbox" id="Red" value="red" name="red">
+ <label for="gray">Gray</label>
+ <input type="checkbox" id="gray" value="gray" name="gray">
+ </fieldset><br /><br />
+ <label>Additional Comments:</label><br />
+ <textarea rows="15" cols="55"name="comments"></textarea><br /><br />
+ 
+ <button id="submit" name="submit" value="Submit">Submit</button>
+ <body></body>
+</html>

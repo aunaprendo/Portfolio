@@ -1,0 +1,9 @@
+
+body {background-color:#f4f4f4;}
+.color-box{width:125px;
+height: 125px;}
+.color1{background-color:#882399;}
+.color2{background-color:rgb(01,99,15);}
+.color3{background-color:cyan;}
+.color4{background-color:hsl(01,50%,50%);}
+.color5{background-color:#016199;}

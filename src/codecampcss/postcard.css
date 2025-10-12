@@ -1,0 +1,21 @@
+
+.blog-post-card {background-color: white;
+border-radius: 10px;
+width: 500px;
+text-align: center;}
+.post-img {width: 100%;
+border-bottom: 3px dotted gray;}
+.post-content {Padding: 25px;}
+.post-title {color: teal;
+margin: 10px;}
+.post-excerpt {color: gray;
+margin: 15px;}
+.read-more {color: navy;
+background-color: gold;
+margin: 10px;
+padding: 10px;
+border-radius: 15px;
+display: inline-block;
+font-family: ariel;
+}
+.read-more:hover { background-color:teal; } 

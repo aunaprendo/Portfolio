@@ -1,0 +1,14 @@
+#email{padding:50px;
+margin-top: 50px;
+width:500px;
+border:2px;
+box-sizing: border-box;
+background-color: gold;}
+
+#confidential, #top-secret{display: inline-block;
+ padding: 5px;
+ margin-left: 10px;
+ border: solid black 2px;
+ transform: rotate(-25deg);
+ background-color: hsl(30 20% 75%);}
+ .blurred{filter:blur(3px);}
