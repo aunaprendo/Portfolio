@@ -1,6 +1,5 @@
 #playing-cards{display:flex;
 flex-wrap: wrap;
-justify-content: center;
 gap: 20px;
 font-size: 20px;
 font-family: arial;
@@ -16,9 +15,9 @@ border-radius: 5%;}
 align-self:flex-start;
 }
 
-.middle{display:flex;
-align-self: center;
-flex-flow: column;
+.middle{
+align-items: center;
+justify-content: center;
 color: teal;
 font-size: 35px;
 }
