@@ -25,12 +25,18 @@
     border: var(--solid-border);
 	background-image: linear-gradient( 
     90deg,
-    var(--color0) 0% 18%,
-    var(--color1) 18% 34%,
-    var(--color2) 34% 50%,
-    var(--color3) 50% 66%,
-    var(--color4) 66% 82%,
-    var(--color5) 82% 100%,
+    var(--color0) 0%,
+	var(--color0) 18%,
+    var(--color1) 18%,
+	var(--color1) 34%,
+    var(--color2) 34%,
+	var(--color2) 50%,
+    var(--color3) 50%,
+	var(--color3) 66%,
+    var(--color4) 66%,
+	var(--color4) 82%,
+    var(--color5) 82%,
+	var(--color5) 100%
   );
 }
 
