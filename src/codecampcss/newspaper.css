@@ -1,0 +1,15 @@
+.title{grid-area:title}
+
+.feature-article{grid-area:feature-article}
+
+.secondary-article{grid-area:secondary-article}
+
+.cover-image{grid-area:cover-image}
+
+.small-article1{grid-area:small-article1}
+
+.small-article2{grid-area:small-article2}
+
+.small-article3{grid-area:small-article3}
+
+.newspaper-layout{CSS Grid with a grid-template-areas}

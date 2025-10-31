@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+
+
+
+
+Your .newspaper-layout should use CSS Grid with a grid-template-areas property to define the arrangement of sections:
+The .title should span across the top row.
+The .feature-article should span two columns in the second row, with the .cover-image in the third column.
+The .secondary-article should span two columns in the third row, with the .cover-image in the third column.
+The three small articles should appear in the fourth row.
+The .newspaper-layout should have a grid-template-columns property that divides the space into three equal columns.
+You should set the .newspaper-layout's grid-template-rows property to auto for the first row and divide the remaining space into equal parts for the other rows.
+You should add a gap between grid items.
+Ensure that the image inside .cover-image fits within the designated space by setting its max-width to 100%.
