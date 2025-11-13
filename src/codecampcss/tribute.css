@@ -1,0 +1,7 @@
+*{font-family: arial, sans-serif;}
+h1, h2, #tribute-info{text-align: center;}
+#image{max-width: 100%;
+height: auto;}
+img{
+  display: block;
+  justify-content: center;}

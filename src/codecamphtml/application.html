@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Job Application Form</title>
+ <link href="../codecampcss/application.css" rel="stylesheet">
+</head>
+<body>
+ <div class="container">
+ <h1>Squirrel Application Form</h1>
+ <form>
+ <label for="name">Full Name: </label><input type="text" id="name" 
+name="name" placeholder="Enter your full name" required><br><br>
+ <label for="email">Email:</label><input type="email" id="email" 
+name="email" placeholder="example@example.com"><br><br>
+ <label for="position">Position:</label><select id="position">
+ <option>Select a Position</option>
+ 
+ <option>Nut Hider</option>
+ <option>Nut Finder</option>
+ <option>Drey Builder</option>
+ <option>Mushroom Jerky Maker</option>
+ <option>Pup Rearer</option>
+ </select><br/>
+ <br/><fieldset class="radio-group"><legend>Availability:</legend>
+ 
+ <input type="radio" name="availability" value="Mornings" class="radio-group" 
+id="morning">
+ <label class="radio-group" for="morning">Mornings</label><br>
+ <input type="radio" name="availability" value="afternoons" class="radiogroup" id="afternoon">
+ <label class="radio-group" for="afternoon">
+ Afternoons
+ </label><br>
+ <input type="radio" name="availability" value="evenings" class="radio-group" 
+id="evening">
+ <label class="radio-group" for="evening">
+ Evenings
+ </label><br>
+ </fieldset><br>
+ <label for="message">Why Do You Want to Be a Squirrel?</label><br>
+ <textarea id="message" placeholder="Type your why here" rows="15" 
+cols="55"></textarea><br><br>
+ <button type="submit">Submit Application</button>
+ </form> 
+ </div>
+</body>
+</html>
