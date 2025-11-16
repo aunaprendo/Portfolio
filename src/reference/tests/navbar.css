@@ -1,25 +1,4 @@
 
-
-/* Navigation Links */
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    transition: 0.3s;
-}
-
-.nav-links li a:hover {
-    color: #00bfff;
-}
-
 /* Responsive */
 @media (max-width: 700px) {
     nav {

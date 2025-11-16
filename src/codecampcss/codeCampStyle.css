@@ -54,7 +54,7 @@ body {
 	font-family: "Montserrat", sans-serif;
 	line-height: 1.5;
 	margin: 0;
-	padding-top: 80px;
+	padding-top: 100px;
 }
 
 /* Navbar */
@@ -72,22 +72,120 @@ nav {
     align-items: center;
 	height: 80px;
 	width: 100%;
-}
-
-#logo {
-	
+	justify-content: space-between;
 }
 
 #navLinks {
 	display: flex;
     align-items: center;
-	font-weight: var(--weightSemibold);
- 	color: var(--textColorAlt);
+	justify-content: space-evenly;
 }
 
+.navLink {
+	font-weight: var(--weightSemibold);
+ 	color: var(--textColorAlt);
+	padding: 15px;
+}
 
+#logo {
+	height: 70%;
+	padding-left: 15px;
+}
 
-/* Footer */
+/* --- OVERLAY --- */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+  z-index: 900;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* --- HAMBURGER BUTTON --- */
+.hamburger {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: #fff;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+/* X ANIMATION */
+.hamburger.active span:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+/* --- SIDE MENU --- */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #222;
+  color: #fff;
+  overflow-y: auto;
+  transition: left 0.3s ease;
+  padding-top: 80px;
+  z-index: 1000;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu li {
+  padding: 15px 20px;
+}
+
+.side-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.side-menu a:hover {
+  background: #444;
+}
+
+/* ACTIVE MENU */
+.side-menu.active {
+  left: 0;
+}
+
+/* Footer 
 #footer {
   background: #111111;
 }
@@ -126,9 +224,9 @@ nav {
 
 #footer p {
   font-size: 0.8rem;
-}
-
-/* Responsiveness */
+  }
+  
+Responsiveness 
 
 @media (max-width: 1000px) {
   .project {
@@ -213,3 +311,4 @@ nav {
     width: 80%;
   }
 }
+*/
