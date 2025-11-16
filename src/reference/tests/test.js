@@ -1,3 +1,5 @@
+
+
 const hamburger = document.getElementById("hamburger");
 const sideMenu = document.getElementById("sideMenu");
 const overlay = document.getElementById("overlay");
@@ -9,4 +11,4 @@ function toggleMenu() {
 }
 
 hamburger.addEventListener("click", toggleMenu);
-overlay.addEventListener("click", toggleMenu);  // click outside to close
+overlay.addEventListener("click", toggleMenu); // Close on overlay click
