@@ -1,0 +1,25 @@
+#red {
+	background-color: red;
+	width: 20%;
+}
+
+#blue {
+	background-color: blue;
+	width: 20%;
+}
+
+#yellow {
+	background-color: yellow;
+	width: 20%;
+}
+
+
+/* 
+	--primary-color: #76a5af;
+	--secondary-color: #d0e0e3;
+	--bg-primary: #ffffff;
+	--bg-secondary: #222222;
+	--text-color: #222222;
+	--text-color-two: #ffffff;
+--shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+*/
