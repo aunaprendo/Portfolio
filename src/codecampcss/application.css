@@ -1,3 +1,11 @@
+@font-face{
+	font-family: "Poppins-Light";
+	font-style: normal;
+	font-weight: normal;
+	src: url("[src/css/fonts/Poppins-Light.otf]");
+}
+
+
 div{font-family: arial;}
 h1{text-align: center;}
 label{font-weight: bold;}
@@ -16,3 +24,4 @@ button:hover{background-color:#00008B;}
 input:first-of-type{border-radius: 10px;
 border-style: dotted;
 }
+#test{font-family: "Poppins-Light";}
