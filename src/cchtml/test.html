@@ -1,59 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title> Squirrel Treat Recipie </title>
-	<link href="../codecampcss/codeCampStyle.css" rel="stylesheet" />
-	
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./test/test.css" />
+  <title>Hamburger Menu with Overlay</title>
 </head>
 <body>
-		
-	<!-- Navbar -->
-	<nav id="topBar">
-		<div id="navBar">
-			<!-- Logo-->
-			<img id="logo" src="../assets/logoSquirrel.svg" alt="Squirrel Logo"/>
-
-			<!-- Navbar links -->
-			<ul id="navLinks">
-				<li><a class="nav-link" href="#">PROJECTS</a></li>
-	            <li><a class="nav-link" href="#">RESUME</a></li>
-	            <li><a class="nav-link" href="#">CONTACT</a></li>
-				<li><a class="nav-link" href="#">HOME</a></li>
-			</ul>
-			
-			<!-- Hamburger Button -->
-			<div class="hamburger" id="hamburger">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-			
-		</div>
-	</nav>
 	
+<!-- Navbar -->
+<nav id="topBar">
+	<div id="navBar">
+		<!-- Logo-->
+		<img id="logo" src="../assets/logoSquirrel.svg" alt="Squirrel Logo"/>
 
-			
-	<!-- Overlay -->
-	<div class="overlay" id="overlay"></div>
-	 
-	<!-- Side Menu -->
-	<nav class="side-menu" id="sideMenu">
-		<h1>codeCamp Projects</h1>
-		<ul>
-	      <li><a href="#">CC HTML</a></li>
-	      <li><a href="#">CC CSS</a></li>
-	      <li><a href="#">CC JS</a></li>
-	      <li><a href="#">CC REACT</a></li>
-		  <li><a href="#">CC PYTHON</a></li>
-	      <li><a href="#">CC DB</a></li>
-	    </ul>
-	</nav>
-  
+		<!-- Navbar links -->
+		<ul id="navLinks">
+			<li><a class="nav-link" href="#">PROJECTS</a></li>
+            <li><a class="nav-link" href="#">RESUME</a></li>
+            <li><a class="nav-link" href="#">CONTACT</a></li>
+			<li><a class="nav-link" href="#">HOME</a></li>
+		</ul>	
+		
+	  <!-- Hamburger (top-right) -->
+	  <div class="hamburger" id="hamburger">
+	    <span></span>
+	    <span></span>
+	    <span></span>
+	  </div>
+	</div>
+</nav>
 
-    <h1> Squirrel Nut Delight </h1>
+  <!-- Overlay -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Left Sliding Menu -->
+  <nav class="side-menu" id="sideMenu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h1> Squirrel Nut Delight </h1>
     <p> A crunchy, nut-packed treat bursting with forest flavors! Handcrafted with the finest selection of woodland treasures, the Squirrel Nut Delight is a chewy-crunchy snack designed to tantalize even the most discerning squirrel palate. Each bite-sized treat is packed with a delicious blend of roasted hazelnuts, crushed acorns, sunflower seeds, pumpkin seeds, and a touch of dried apple, all lightly bound with natural tree sap syrup for a sweet, sticky finish. Wrapped in a delicate shell of toasted bark flakes and rolled in a dusting of ground pine nuts, this snack not only satisfies hunger but delivers a burst of energy for midday tree-leaping adventures. Perfect for hoarding or sharing with your bushy-tailed buddies!</p>
 
   <img class="feature" src="../assets/recipie.jpeg" alt="Nut Cluster Treats">
@@ -86,7 +77,34 @@
 	
 		
 	
-	
-<script src="../codecampjs/codeCampScript.js"></script>
+  
+<script src="./test/test.js"></script>
 </body>
 </html>
+ <!-- <footer id="footer">
+      <div class="container">
+        <a href="mailto:georgiajeanmetz@gmail.com">georgiajeanmetz@gmail.com</a>
+        <!-- Social links 
+        <div class="social">
+          <a href="#" target="_blank"
+            ><img src="./assets/linkedin-icon.svg" alt="Linkedin"
+          /></a>
+          <a href="#" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+        </div>
+        <!-- Attribution 
+        <div class="attribution">
+          <a
+            href="https://github.com/CommunityPro/portfolio-html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://user-images.githubusercontent.com/62628408/157202263-9174da24-b19a-4017-9b7c-a1d26ae8f014.svg"
+              alt="attribution"
+              width="150px"
+            />
+          </a>
+        </div>
+        <p>Copyright &copy; Communitypro <span id="datee"></span>, All rights reserved</p>
+      </div>
+    </footer>-->

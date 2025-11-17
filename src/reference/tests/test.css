@@ -18,6 +18,8 @@
 	--weightBold: 700;
 }
 
+/* Reset default styling */
+
 html {
 	font-size: 100%;
 	scroll-behavior: smooth;
