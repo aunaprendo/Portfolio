@@ -1,3 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* variables */
+:root {
+	/* Colors */
+	--accentColorMain: #CC8305;
+	--accentColorAlt: #FAB63E;
+	--accentColorBold: #037172;
+	--accentColorGray: 757575;
+	--bgColorMain: #ffffff;
+	--bgColorAlt: #222222;
+	--textColorMain: #222222;
+	--textColorAlt: #ffffff;
+
+	/* Font Weight */
+	--weightSmall: 300;
+	--weightSemibold:500;
+	--weightBold: 700;
+}
+
+html {
+	font-size: 100%;
+	scroll-behavior: smooth;
+}
+
+* {
+	
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: var(--accentColorMain);
+}
+
+a:hover {
+    color: var(--accentColorBold);
+}
+
+a:visited {
+    color: var(--accentColorGray);
+}
+
+/* Main styling */
+body {
+	background: var(--bgColorMain);
+	color: var(--textColorMain);
+	font-family: "Montserrat", sans-serif;
+	line-height: 1.5;
+	margin: 15px;
+	padding-top: 75px;
+}
 /* --- Overlay --- */
 .overlay {
   position: fixed;
@@ -85,4 +141,63 @@
   left: 0;
 }
 
+/* Navbar */
+#topBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+	right: 0;
+    background: var(--bgColorAlt);
+    z-index: 1000;
+}
+
+#navBar {
+	display: flex;
+    align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	width: 100%;
+}
+
+#navLinks {
+	display: flex;
+    align-items: center;
+	justify-content: space-evenly;
+	padding-right: 60px;
+}
+
+.nav-link {
+	font-weight: var(--weightSemibold);
+ 	color: var(--textColorAlt);
+	padding: 15px;
+}
+
+#logo {
+	height: 70%;
+	padding-left: 15px;
+}
+
+/* ACORN BULLET POINTS*/
+.custom-bullets li {
+  list-style: none;
+  position: relative;
+  padding-left: 28px; /* space for icon */
+}
+
+.custom-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../assets/acorn.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.feature {
+	display: block;
+	margin: 0 auto;
+}
 
