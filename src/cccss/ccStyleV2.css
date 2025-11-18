@@ -267,3 +267,55 @@ body {
 #footer p {
   font-size: 0.8rem;
 }
+
+
+/* RESPONSIVE SETUPS */
+
+/* ================================
+   MOBILE NAVIGATION BEHAVIOR
+=================================*/
+@media (max-width: 768px) {
+
+  /* Hide nav links in normal navbar */
+  #navLinks {
+    display: none;
+  }
+
+  /* FULL-WIDTH SIDEMENU ON MOBILE */
+  .side-menu {
+    width: 100%;
+    left: -100%;
+    padding-top: 120px; /* room for hamburger/X */
+  }
+
+  .side-menu.open {
+    left: 0;
+  }
+
+  /* MOVE NAVLINKS INTO SIDEMENU */
+  .side-menu #mobileNavLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  .side-menu #mobileNavLinks a {
+    color: var(--textColorAlt);
+    font-size: 1.3rem;
+    font-weight: var(--weightBold);
+    padding: 10px 0;
+  }
+
+  /* EXISTING SIDEMENU CONTENT SHIFTS DOWN */
+  .side-menu h2,
+  .side-menu > ul {
+    margin-top: 30px;
+  }
+
+  /* HIDE OVERLAY ON MOBILE */
+  .overlay.show {
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+}
