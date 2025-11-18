@@ -21,9 +21,19 @@ overlay.addEventListener("click", toggleMenu);
 function moveNavLinks() {
   if (window.innerWidth <= 768) {
     if (mobileNavLinks.childElementCount === 0) {
-      mobileNavLinks.append(...navLinks.cloneNode(true).children);
+
+      // Clone nav links
+      const clone = navLinks.cloneNode(true);
+
+      // Reverse order
+      const linksArray = Array.from(clone.children).reverse();
+
+      // Append reversed
+      mobileNavLinks.append(...linksArray);
     }
   }
 }
+
 moveNavLinks();
 window.addEventListener("resize", moveNavLinks);
+

@@ -136,7 +136,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-  z-index: 1100;
+  z-index: 2000;
 }
 
 .hamburger span {
@@ -268,15 +268,11 @@ body {
   font-size: 0.8rem;
 }
 
-
-/* RESPONSIVE SETUPS */
-
 /* ================================
    MOBILE NAVIGATION BEHAVIOR
 =================================*/
 @media (max-width: 768px) {
 
-  /* Hide nav links in normal navbar */
   #navLinks {
     display: none;
   }
@@ -285,19 +281,28 @@ body {
   .side-menu {
     width: 100%;
     left: -100%;
-    padding-top: 120px; /* room for hamburger/X */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centers vertically */
+    align-items: flex-start; /* keep left alignment */
+    padding-top: 0; /* no forced offset */
+    padding-left: 25px;
   }
 
   .side-menu.open {
     left: 0;
   }
 
+  .side-menu {
+    z-index: 1500;
+  }
+  
   /* MOVE NAVLINKS INTO SIDEMENU */
   .side-menu #mobileNavLinks {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
   .side-menu #mobileNavLinks a {
@@ -311,6 +316,14 @@ body {
   .side-menu h2,
   .side-menu > ul {
     margin-top: 30px;
+  }
+
+  .side-menu h2 {
+    margin-bottom: 10px;
+  }
+
+  .side-menu > ul {
+    margin-top: 0;
   }
 
   /* HIDE OVERLAY ON MOBILE */
