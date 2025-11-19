@@ -295,8 +295,6 @@ main {
 
   /* FULL-WIDTH SIDEMENU ON MOBILE */
   .side-menu {
-    width: 100%;
-    left: -100%;
     display: flex;
     flex-direction: column;
     justify-content: center; /* centers vertically */
@@ -347,12 +345,6 @@ main {
   .side-menu > ul {
     margin-top: 0;
   }
-
-  /* HIDE OVERLAY ON MOBILE */
-  .overlay.show {
-    opacity: 0 !important;
-    visibility: hidden !important;
-  }
   
   /* MOBILE DROPDOWN */
 .mobile-dropdown {
@@ -377,7 +369,7 @@ main {
     flex-direction: column;
     margin-top: 10px;
     padding-left: 20px;
-    gap: 15px;
+    gap: 0;
 }
 
 .dropdown-menu a {
