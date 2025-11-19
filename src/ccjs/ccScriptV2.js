@@ -9,7 +9,7 @@ function toggleMenu() {
   sideMenu.classList.toggle("open");
 
   // only use overlay on desktop
-  if (window.innerWidth > 768) {
+  if (window.innerWidth > 2800) {
     overlay.classList.toggle("show");
   }
 }
@@ -19,7 +19,7 @@ overlay.addEventListener("click", toggleMenu);
 
 // Move nav links into mobile area
 function moveNavLinks() {
-  if (window.innerWidth <= 768) {
+  if (window.innerWidth <= 2800) {
     if (mobileNavLinks.childElementCount === 0) {
 
       // Clone nav links
@@ -37,3 +37,9 @@ function moveNavLinks() {
 moveNavLinks();
 window.addEventListener("resize", moveNavLinks);
 
+const dropdownTrigger = document.querySelector(".dropdown-trigger");
+const dropdownMenu = document.querySelector(".dropdown-menu");
+
+dropdownTrigger.addEventListener("click", () => {
+    dropdownMenu.classList.toggle("show");
+});
