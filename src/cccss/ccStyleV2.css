@@ -251,13 +251,17 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  gap: 0;
   color: var(--textColorAlt);
-  height: 120px;
   width: 100%;
   text-align: center;
   line-height: 1.2;
 }
+
+
 
 #footer a {
   font-size: 0.8rem;
@@ -284,7 +288,7 @@ main {
 
 #footer p {
   font-size: 0.8rem;
-  margin: 15px;
+  margin: 5px;
 }
 
 /* ================================
