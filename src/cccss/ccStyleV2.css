@@ -182,7 +182,9 @@ main {
   position: fixed;
   top: 0;
   left: -275px;
-  width: 275px;
+  width: 275px !important;
+  max-width: 275px !important;
+  min-width: 275px !important;
   height: 100%;
   background: var(--bgColorAlt);
   color: var(--textColorAlt);
@@ -233,11 +235,11 @@ main {
   z-index: 1000;
 }
 
+/* When active */
 .overlay.show {
   opacity: 1;
   visibility: visible;
 }
-
 
 /* FOOTER */
 #footer {
@@ -293,7 +295,7 @@ main {
     display: none;
   }
 
-  /* FULL-WIDTH SIDEMENU ON MOBILE */
+  /* SIDEMENU ON MOBILE */
   .side-menu {
     display: flex;
     flex-direction: column;
@@ -356,7 +358,7 @@ main {
     font-weight: var(--weightBold);
     color: var(--textColorAlt);
     cursor: pointer;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .dropdown-trigger:hover {
@@ -385,5 +387,6 @@ main {
 .dropdown-menu.show {
     display: flex;
 }
-  
+
+
 }

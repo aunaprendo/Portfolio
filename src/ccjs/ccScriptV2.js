@@ -7,11 +7,7 @@ const mobileNavLinks = document.getElementById("mobileNavLinks");
 function toggleMenu() {
   hamburger.classList.toggle("active");
   sideMenu.classList.toggle("open");
-
-  // only use overlay on desktop
-  if (window.innerWidth > 2800) {
-    overlay.classList.toggle("show");
-  }
+  overlay.classList.toggle("show");
 }
 
 hamburger.addEventListener("click", toggleMenu);
