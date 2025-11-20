@@ -284,6 +284,7 @@ main {
 
 #footer p {
   font-size: 0.8rem;
+  margin: 5px;
 }
 
 /* ================================
@@ -369,7 +370,7 @@ main {
 .dropdown-menu {
     display: none;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 5px;
     padding-left: 20px;
     gap: 0;
 }
@@ -377,8 +378,14 @@ main {
 .dropdown-menu a {
     color: var(--textColorAlt);
     font-size: 1.2rem;
+	line-height: 1.1;      /* tighter spacing */
+    padding: 4px 0;        /* reduce extra vertical padding */
 }
-
+	
+.dropdown-menu li {
+    margin: 0;    /* remove extra gap */
+    padding: 0;   /* ensure no added padding */
+}
 .dropdown-menu a:hover {
     color: var(--accentColorMain);
 }
