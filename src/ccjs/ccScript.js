@@ -1,41 +1,88 @@
-const hamburger = document.getElementById("hamburger");
-const sideMenu = document.getElementById("sideMenu");
-const overlay = document.getElementById("overlay");
-const navLinks = document.getElementById("navLinks");
-const mobileNavLinks = document.getElementById("mobileNavLinks");
+/* ================================
+   LOAD HTML PARTIALS (navbar, sidemenu, footer)
+================================ */
+document.addEventListener("DOMContentLoaded", () => {
+    const includes = document.querySelectorAll("[data-include]");
 
-function toggleMenu() {
-  hamburger.classList.toggle("active");
-  sideMenu.classList.toggle("open");
-  overlay.classList.toggle("show");
-}
+    includes.forEach(async (el) => {
+        const file = el.getAttribute("data-include");
+        const response = await fetch(file);
+        const html = await response.text();
 
-hamburger.addEventListener("click", toggleMenu);
-overlay.addEventListener("click", toggleMenu);
+        el.innerHTML = html;
 
-// Move nav links into mobile area
-function moveNavLinks() {
-  if (window.innerWidth <= 768) {
-    if (mobileNavLinks.childElementCount === 0) {
-
-      // Clone nav links
-      const clone = navLinks.cloneNode(true);
-
-      // Reverse order
-      const linksArray = Array.from(clone.children).reverse();
-
-      // Append reversed
-      mobileNavLinks.append(...linksArray);
-    }
-  }
-}
-
-moveNavLinks();
-window.addEventListener("resize", moveNavLinks);
-
-const dropdownTrigger = document.querySelector(".dropdown-trigger");
-const dropdownMenu = document.querySelector(".dropdown-menu");
-
-dropdownTrigger.addEventListener("click", () => {
-    dropdownMenu.classList.toggle("show");
+        // INITIALIZE ONLY WHAT LOADED
+        if (file.includes("navbar")) initNavbar();
+        if (file.includes("sidemenu")) initSideMenu();
+        if (file.includes("footer")) {} // no footer JS needed
+    });
 });
+
+
+/* ================================
+   GLOBAL FUNCTIONS
+================================ */
+
+// Toggle open/close for side menu
+function toggleMenu() {
+    const hamburger = document.getElementById("hamburger");
+    const sideMenu = document.getElementById("sideMenu");
+    const overlay = document.getElementById("overlay");
+
+    hamburger.classList.toggle("active");
+    sideMenu.classList.toggle("open");
+    overlay.classList.toggle("show");
+}
+
+// Moves navbar links → into mobile menu
+function moveNavLinks() {
+    const navLinks = document.getElementById("navLinks");
+    const mobileNavLinks = document.getElementById("mobileNavLinks");
+
+    if (!navLinks || !mobileNavLinks) return;
+    if (window.innerWidth > 768) return;
+
+    // Only add once
+    if (mobileNavLinks.childElementCount === 0) {
+        const clone = navLinks.cloneNode(true);
+        const reversed = Array.from(clone.children).reverse();
+        mobileNavLinks.append(...reversed);
+    }
+}
+
+
+/* ================================
+   NAVBAR INITIALIZATION
+================================ */
+function initNavbar() {
+    const hamburger = document.getElementById("hamburger");
+    const overlay = document.getElementById("overlay");
+
+    if (!hamburger || !overlay) return;
+
+    hamburger.addEventListener("click", toggleMenu);
+    overlay.addEventListener("click", toggleMenu);
+}
+
+
+/* ================================
+   SIDE MENU INITIALIZATION
+================================ */
+function initSideMenu() {
+    moveNavLinks();
+    window.addEventListener("resize", moveNavLinks);
+
+    // Dropdown
+    const dropdownTrigger = document.querySelector(".dropdown-trigger");
+    const dropdownMenu = document.querySelector(".dropdown-menu");
+
+    if (dropdownTrigger && dropdownMenu) {
+        dropdownTrigger.addEventListener("click", () => {
+            dropdownMenu.classList.toggle("show");
+        });
+    }
+
+    initSwipeMenu();
+}
+
+
