@@ -264,7 +264,7 @@ main {
   font-weight: var(--weight-bold);
   color: var(--text-color-alt);
   cursor: pointer;
-  padding: 20px 0;
+  padding-top: 10px;
 }
 
 .dropdown-trigger:hover {
@@ -387,19 +387,21 @@ main {
   .side-menu {
     justify-content: center;
     padding-top: 0;
-    padding-left: 25px;
     z-index: 1500;
+		margin: 0;
   }
 
   #mobile-nav-links {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin-bottom: 0;
+    gap: 0;
+    margin: 0;
+		list-style: none;
+		line-height: 1.4px;
   }
 
   #mobile-nav-links a {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: var(--weight-bold);
     color: var(--text-color-alt);
   }
