@@ -1,0 +1,17 @@
+project/
+│
+├── index.html                 <-- Main page example
+├── partials/
+│   ├── nav-bar.html
+│   ├── side-menu.html
+│   └── footer.html
+├── assets/
+│   ├── logo-squirrel.svg
+│   ├── linkedin-icon.svg
+│   ├── github-icon.svg
+│   ├── acorn.svg
+│   └── recipie.jpeg
+├── css/
+│   └── cc-style.css
+└── js/
+    └── cc-script.js
