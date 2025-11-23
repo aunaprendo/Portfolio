@@ -8,8 +8,19 @@
   <title>Squirrel Scoops Recipe</title>
 </head>
 <body>
-  <div data-include="./partials/navBar.html"></div>
-  <div data-include="./partials/sideMenu.html"></div>
+  <!-- Main navigation -->
+  <div 
+    data-include="./partials/navBar.html" 
+    role="navigation" 
+    aria-label="Primary navigation"
+    ></div>
+
+  <!-- Side menu -->
+  <div 
+    data-include="./partials/sideMenu.html" 
+    role="navigation" 
+    aria-label="Side menu"
+    ></div>
 
   <main>
     <h1>Squirrel Scoops</h1>
@@ -49,7 +60,11 @@
     </ol>
   </main>
 
-  <div data-include="./partials/footer.html"></div>
+   <div 
+      data-include="./partials/footer.html" 
+      role="contentinfo" 
+      aria-label="Footer"
+    ></div>
 
   <script src="../ccjs/ccScript.js"></script>
 </body>

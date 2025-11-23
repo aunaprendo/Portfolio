@@ -1,37 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Mr. Whiskers' Blog</title>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../cccss/ccStyle.css" rel="stylesheet" />
+    <title>Mr. Whiskers' Blog</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to Mr. Whiskers' Blog Page!</h1>
-      <figure>
-        <img
-          src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg"
-          alt="a cat in the garden"
-        />
-        <figcaption>Mr. Whiskers in the Garden</figcaption>
-      </figure>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#posts">Posts</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <!-- Main navigation -->
+    <div
+      data-include="./partials/navBar.html"
+      role="navigation"
+      aria-label="Primary navigation"
+    ></div>
+
+    <!-- Side menu -->
+    <div
+      data-include="./partials/sideMenu.html"
+      role="navigation"
+      aria-label="Side menu"
+    ></div>
+
     <main>
+      <header>
+        <h1>Welcome to Mr. Whiskers' Blog Page!</h1>
+        <figure>
+          <img
+            src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg"
+            alt="Mr. Whiskers in the garden"
+          />
+          <figcaption>Mr. Whiskers in the Garden</figcaption>
+        </figure>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#posts">Posts</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
       <section id="about">
         <h2>About</h2>
         <p>
-          Hi there! I'm Jane Doe, a passionate writer who finds endless inspiration in the antics of my beloved cat, Mr. Whiskers.
+          Hi there! I'm Jane Doe, a passionate writer who finds endless
+          inspiration in the antics of my beloved cat, Mr. Whiskers.
         </p>
         <p>
-          His playful nature and boundless energy keeps me on my toes. I love him so much.
+          His playful nature and boundless energy keep me on my toes. I love him
+          so much.
         </p>
       </section>
+
       <section id="posts">
         <h2>Posts</h2>
 
@@ -50,6 +71,7 @@
             quibusdam dolorum quia nemo repudiandae quidem voluptatum quas.
           </p>
         </article>
+
         <article>
           <h3>Mr. Whiskers' First Bath</h3>
           <p>
@@ -65,6 +87,7 @@
             quibusdam dolorum quia nemo repudiandae quidem voluptatum quas.
           </p>
         </article>
+
         <article>
           <h3>Mr. Whiskers' First Birthday Party</h3>
           <p>
@@ -82,14 +105,13 @@
         </article>
       </section>
     </main>
-    <footer>
-        <section id="contact">
-            <h2>Contact</h2>
-            <address>
-                <p>Phone: <a href="tel:5555555555">555-555-5555</a></p>
-                <p>Email: fake@email.com</p>
-            </address>
-        </section>
-    </footer>
+
+    <div
+      data-include="./partials/footer.html"
+      role="contentinfo"
+      aria-label="Footer"
+    ></div>
+
+    <script src="../ccjs/ccScript.js"></script>
   </body>
 </html>
