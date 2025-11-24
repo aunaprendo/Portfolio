@@ -20,13 +20,6 @@ header {
   align-items: center;
 }
 
-#logo {
-  width: max(10rem, 18vw);
-  aspect-ratio: 35 / 4;
-  padding: 0.4rem;
-  background-color: #0a0a23;
-}
-
 /* Page title */
 h1 {
   color: #f1be32;
@@ -60,7 +53,6 @@ h1 {
   list-style: none;
 }
 
-/* Hover improvements for visual and pointer accessibility */
 nav > ul > li:hover {
   background-color: #dfdfe2;
   color: #1b1b32;
@@ -73,7 +65,7 @@ li > a {
 }
 
 main {
-  padding-top: 50px; /* Prevent overlap under fixed header */
+  padding-top: 50px; 
 }
 
 section {
@@ -86,7 +78,7 @@ section {
 h2 {
   border-bottom: 4px solid #dfdfe2;
   margin-top: 0;
-  padding-top: 60px; /* Extra spacing for anchor targets */
+  padding-top: 60px;
 }
 
 /* Form Layout */
