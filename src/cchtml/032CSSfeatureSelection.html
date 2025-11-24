@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="../cccss/ccStyle.css" rel="stylesheet" />
-  <title>HTML Audio and Video Lab</title>
+  <link rel="stylesheet" href="../cccss/featureselect.css" />
+  <title>Feature Selection Page</title>
 </head>
-
 <body>
   <!-- Main navigation -->
   <nav 
@@ -23,28 +23,20 @@
     aria-label="Side menu">
   </aside>
 
-    <main>
-      <h1>Squirrel Entertainment</h1>
+  <main>
+    <h1>Feature Selection</h1>
 
-      <section>
-        <h2>Squirrel Tube</h2>
-        <video controls width="640">
-          <source
-            src="https://cdn.freecodecamp.org/curriculum/labs/What%20is%20the%20map%20method%20and%20how%20does%20it%20work.mp4"
-            type="video/mp4"
-          />
-        </video>
-      </section>
+    <div class="feature-card-container" role="group" aria-label="Squirrel feature selection">
+      <label class="feature-card">
+        <input type="checkbox" name="feature" value="tail" aria-checked="false" />
+        Bushy Tail
+      </label>
 
-      <section>
-        <h2>Squirrel Tune</h2>
-        <audio
-          controls
-          loop
-          src="https://cdn.freecodecamp.org/curriculum/js-music-player/we-are-going-to-make-it.mp3"
-        ></audio>
-      </section>
-			
+      <label class="feature-card">
+        <input type="checkbox" name="feature" value="ears" aria-checked="false" />
+        Fuzzy Ears
+      </label>
+    </div>
   </main>
 
 	<!-- Footer -->

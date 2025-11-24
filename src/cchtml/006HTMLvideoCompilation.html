@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../cccss/ccStyle.css" rel="stylesheet" />
-    <title>Video Compilation Page</title>
-  </head>
-  <body>
-    <!-- Main navigation -->
-    <div
-      data-include="./partials/navBar.html"
-      role="navigation"
-      aria-label="Primary navigation"
-    ></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="../cccss/ccStyle.css" rel="stylesheet" />
+  <title>Video Compilation Page</title>
+</head>
 
-    <!-- Side menu -->
-    <div
-      data-include="./partials/sideMenu.html"
-      role="navigation"
-      aria-label="Side menu"
-    ></div>
+<body>
+  <!-- Main navigation -->
+  <nav 
+    data-include="./partials/navBar.html" 
+    role="navigation" 
+    aria-label="Primary navigation">
+  </nav>
+
+  <!-- Side menu -->
+  <aside 
+    data-include="./partials/sideMenu.html" 
+    role="navigation" 
+    aria-label="Side menu">
+  </aside>
 
     <main>
       <h1>Entertaining Squirrels</h1>
@@ -95,14 +96,15 @@
           allowfullscreen
         ></iframe>
       </section>
-    </main>
+  </main>
 
-    <div
-      data-include="./partials/footer.html"
-      role="contentinfo"
-      aria-label="Footer"
-    ></div>
+	<!-- Footer -->
+  <footer 
+    data-include="./partials/footer.html" 
+    role="contentinfo" 
+    aria-label="Footer">
+  </footer>
 
-    <script src="../ccjs/ccScript.js"></script>
-  </body>
+  <script src="../ccjs/ccScript.js"></script>
+</body>
 </html>

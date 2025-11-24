@@ -1,13 +1,19 @@
-body {
-  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
-  font-family: sans-serif;
-  padding: 20px;
+/* Coffee background */
+#coffee-background {
+  background-image: url("https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 h1 {
   font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 15px;
 }
 
 h2 {
@@ -16,84 +22,64 @@ h2 {
 
 .established {
   font-style: italic;
-}
-
-h1, h2, p {
   text-align: center;
 }
 
+/* Paragraphs */
+p {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Menu container */
 .menu {
   width: 80%;
-  background-color: burlywood;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
   max-width: 500px;
+  background-color: burlywood;
+  margin: 20px auto;
+  padding: 20px;
+  z-index: 100;
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* Images */
 img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
+/* Horizontal rule */
 hr {
   height: 2px;
   background-color: brown;
-  border-color: brown;
+  border: none;
+  margin: 20px 0;
 }
 
 .bottom-line {
   margin-top: 25px;
 }
 
-h1, h2 {
-  font-family: Impact, serif;
-}
-
+/* Menu items */
 .item p {
   display: inline-block;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: 5px 0;
   font-size: 18px;
 }
 
+/* Item text alignment */
 .flavor, .dessert {
   text-align: left;
   width: 75%;
+  display: inline-block;
 }
 
 .price {
   text-align: right;
   width: 25%;
-}
-
-/* FOOTER */
-
-footer {
-  font-size: 14px;
-}
-
-address {
-  font-style: normal;
-}
-
-.address {
-  margin-bottom: 5px;
-}
-
-a {
-  color: black;
-}
-
-a:visited {
-  color: black;
-}
-
-a:hover {
-  color: brown;
-}
-
-a:active {
-  color: brown;
+  display: inline-block;
 }
