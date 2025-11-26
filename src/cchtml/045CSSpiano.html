@@ -1,39 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Piano</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../codecampcss/piano.css">
-  </head>
-  <body>
-    <div id="piano">
-      <img class="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp Logo" />
-      <div class="keys">
-        <div class="key"></div>
-        <div class="key black--key"></div>
-        <div class="key black--key"></div>
-        <div class="key"></div>
-        <div class="key black--key"></div>
-        <div class="key black--key"></div>
-        <div class="key black--key"></div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="../cccss/ccStyle.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../cccss/piano.css" />
+  <title>Piano</title>
+</head>
 
-        <div class="key"></div>
-        <div class="key black--key"></div>
-        <div class="key black--key"></div>
-        <div class="key"></div>
-        <div class="key black--key"></div>
-        <div class="key black--key"></div>
-        <div class="key black--key"></div>
+<body>
+  <!-- Primary navigation -->
+  <nav
+    data-include="./partials/navBar.html"
+    role="navigation"
+    aria-label="Primary navigation">
+  </nav>
 
-        <div class="key"></div>
-        <div class="key black--key"></div>
-        <div class="key black--key"></div>
-        <div class="key"></div>
-        <div class="key black--key"></div>
-        <div class="key black--key"></div>
-        <div class="key black--key"></div>
+  <!-- Side menu -->
+  <aside
+    data-include="./partials/sideMenu.html"
+    role="navigation"
+    aria-label="Side menu">
+  </aside>
+
+  <main>
+    <!-- Piano container -->
+    <div id="piano" role="application" aria-label="Virtual piano keyboard">
+      
+      <!-- Logo -->
+      <img 
+        class="logo" 
+        src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" 
+        alt="freeCodeCamp Logo"
+      />
+
+      <!-- Piano keys -->
+      <div class="keys" role="group" aria-label="Piano keys">
+
+        <!-- Row 1 -->
+        <button class="key" aria-label="White key" tabindex="0"></button>
+        <button class="key black--key" aria-label="Black key" tabindex="0"></button>
+        <button class="key black--key" aria-label="Black key" tabindex="0"></button>
+        <button class="key" aria-label="White key" tabindex="0"></button>
+        <button class="key black--key" aria-label="Black key" tabindex="0"></button>
+        <button class="key black--key" aria-label="Black key" tabindex="0"></button>
+        <button class="key black--key" aria-label="Black key" tabindex="0"></button>
+
+        <!-- Row 2 -->
+        <button class="key" aria-label="White key" tabindex="0"></button>
+        <button class="key black--key" aria-label="Black key" tabindex="0"></button>
+        <button class="key black--key" aria-label="Black key" tabindex="0"></button>
+        <button class="key" aria-label="White key" tabindex="0"></button>
+        <button class="key black--key" aria-label="Black key" tabindex="0"></button>
+        <button class="key black--key" aria-label="Black key" tabindex="0"></button>
+        <button class="key black--key" aria-label="Black key" tabindex="0"></button>
+
+        <!-- Row 3 -->
+        <button class="key" aria-label="White key" tabindex="0"></button>
+        <button class="key black--key" aria-label="Black key" tabindex="0"></button>
+        <button class="key black--key" aria-label="Black key" tabindex="0"></button>
+        <button class="key" aria-label="White key" tabindex="0"></button>
+        <button class="key black--key" aria-label="Black key" tabindex="0"></button>
+        <button class="key black--key" aria-label="Black key" tabindex="0"></button>
+        <button class="key black--key" aria-label="Black key" tabindex="0"></button>
+
       </div>
     </div>
-  </body>
+  </main>
+
+  <!-- Footer -->
+  <footer
+    data-include="./partials/footer.html"
+    role="contentinfo"
+    aria-label="Footer">
+  </footer>
+
+  <script src="../ccjs/ccScript.js"></script>
+</body>
 </html>

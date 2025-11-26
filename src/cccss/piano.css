@@ -1,3 +1,6 @@
+/* ============================================================
+   Global Settings
+   ============================================================ */
 html {
   box-sizing: border-box;
 }
@@ -6,6 +9,9 @@ html {
   box-sizing: inherit;
 }
 
+/* ============================================================
+   Piano Container
+   ============================================================ */
 #piano {
   background-color: #00471b;
   width: 992px;
@@ -16,6 +22,9 @@ html {
   border-radius: 10px;
 }
 
+/* ============================================================
+   Key Area
+   ============================================================ */
 .keys {
   background-color: #040404;
   width: 949px;
@@ -24,32 +33,67 @@ html {
   overflow: hidden;
 }
 
+/* ============================================================
+   White Keys
+   ============================================================ */
 .key {
-  background-color: #ffffff;
+  background-color: #fff;
   position: relative;
   width: 41px;
   height: 175px;
   margin: 2px;
   float: left;
   border-radius: 0 0 3px 3px;
+
+  /* Accessibility: visible keyboard focus */
+  outline: none;
 }
 
+.key:focus,
+.key:focus-visible {
+  outline: 3px solid #ffbf47;
+  outline-offset: 2px;
+}
+
+/* ============================================================
+   Black Keys
+   ============================================================ */
 .key.black--key::after {
-  background-color: #1d1e22;
   content: "";
   position: absolute;
   left: -18px;
   width: 32px;
   height: 100px;
+  background-color: #1d1e22;
   border-radius: 0 0 3px 3px;
 }
 
+/* ============================================================
+   Piano Logo
+   ============================================================ */
 .logo {
   width: 200px;
   position: absolute;
   top: 23px;
 }
 
+/* ============================================================
+   Reduced Motion Support
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* ============================================================
+   Responsive Adjustments
+   ============================================================ */
+
+/* Phones / Small Tablets */
 @media (max-width: 768px) {
   #piano {
     width: 358px;
@@ -64,6 +108,6 @@ html {
   }
 }
 
-@media (max-width: 1199px) and (min-width: 769px) {
-
+/* Larger Tablets */
+@media (min-width: 769px) and (max-width: 1199px) {
 }
